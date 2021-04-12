@@ -18,7 +18,7 @@ function getCommonCharacterCount(s1, s2) {
     for (let j = 0; j < splited2.length; j++) {
       if (splited1[i] === splited2[j]) {
         count += 1;
-        splited2.splice(splited2[j], 1);
+        splited2.splice(j, 1);
         j = splited2.length + 1;
       }
     }
